@@ -1,10 +1,11 @@
 
 # About
 
-Creates `.kmmacros` files for: 
-1. Your entire Keyboard Maestro Collection
-2. Each Group within your collection
-3. Each Macro within your groups 
+Creates `.kmmacros` files for all of the following: 
+
+ 1. Your entire Keyboard Maestro Collection `macros/Keyboard Maestro Macros.plist`
+ 2. Each Group within your collection `macros/groups/{{Group Name}}.plist`
+ 3. Each Macro within your groups `macros/groups/{{Group Name}}/{{Macro Name}}.plist`
 
 ## How to use it
 
