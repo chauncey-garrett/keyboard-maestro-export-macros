@@ -10,7 +10,7 @@ Creates `.kmmacros` files for:
 
 	git clone https://github.com/michaelfox/keyboard-maestro-macros.git
 	cd keyboard-maestro-macros
-	kmmexport
+	./kmmexport
 
 ## Links
 
