@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <array>
+    <dict>
+      <key>UID</key>
+      <string>3AF25E0A-45C3-4B84-8519-11FCD0F8A2E8</string>
+      <key>IsBrowserContainerOpen</key>
+      <true/>
+      <key>Targeting</key>
+      <dict>
+        <key>Targeting</key>
+        <string>Included</string>
+        <key>TargetingApps</key>
+        <array>
+          <dict>
+            <key>NewFile</key>
+            <string>/Applications/Google Chrome.app</string>
+            <key>BundleIdentifier</key>
+            <string>com.google.Chrome</string>
+            <key>Name</key>
+            <string>Google Chrome.app</string>
+            <key>Alias</key>
+            <data>AAAAAAFoAAIAAQxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADFk0UISCsAAAJQKN8RR29vZ2xlIENocm9tZS5hcHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAol7kcp6R6sAAAAAAAAAAP////8AAAkgAAAAAAAAAAAAAAAAAAAADEFwcGxpY2F0aW9ucwAQAAgAAMWTi1gAAAARAAgAAMp6f+sAAAABAAQCUCjfAAIALE1hY2ludG9zaCBIRDpBcHBsaWNhdGlvbnM6AEdvb2dsZSBDaHJvbWUuYXBwAA4AJAARAEcAbwBvAGcAbABlACAAQwBoAHIAbwBtAGUALgBhAHAAcAAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAB5BcHBsaWNhdGlvbnMvR29vZ2xlIENocm9tZS5hcHAAEwABLwD//wAA</data>
+            <key>FileType</key>
+            <integer>1095782476</integer>
+            <key>Creator</key>
+            <integer>1919511898</integer>
+          </dict>
+        </array>
+      </dict>
+      <key>Activate</key>
+      <string>Normal</string>
+      <key>AddToMacroPalette</key>
+      <false/>
+      <key>IsActive</key>
+      <true/>
+      <key>KeyCode</key>
+      <integer>32767</integer>
+      <key>Name</key>
+      <string>Chrome Group</string>
+      <key>Modifiers</key>
+      <integer>0</integer>
+      <key>AddToStatusMenu</key>
+      <false/>
+      <key>Macros</key>
+      <array>
+        <dict>
+          <key>UID</key>
+          <string>1861BA12-3457-4D4E-822F-C567921989E4</string>
+          <key>Name</key>
+          <string>No Cmd-Q in Chrome</string>
+          <key>Triggers</key>
+          <array>
+            <dict>
+              <key>MacroTriggerType</key>
+              <string>HotKey</string>
+              <key>Modifiers</key>
+              <integer>256</integer>
+              <key>FireType</key>
+              <string>Pressed</string>
+              <key>TriggerRepeat</key>
+              <false/>
+              <key>KeyCode</key>
+              <integer>12</integer>
+            </dict>
+          </array>
+          <key>IsActive</key>
+          <false/>
+          <key>Actions</key>
+          <array>
+            <dict>
+              <key>IsDisclosed</key>
+              <true/>
+              <key>Text</key>
+              <string>No Quitting Chrome via Cmd-Q</string>
+              <key>Title</key>
+              <string>Cmd-Q Blocked</string>
+              <key>IsActive</key>
+              <true/>
+              <key>MacroActionType</key>
+              <string>Growl</string>
+            </dict>
+          </array>
+        </dict>
+      </array>
+    </dict>
+  </array>
+</plist>
