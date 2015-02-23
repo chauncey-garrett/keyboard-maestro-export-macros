@@ -1,0 +1,5 @@
+{
+    "require": {
+        "rodneyrehm/plist": "dev-master"
+    }
+}
