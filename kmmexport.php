@@ -1,15 +1,20 @@
 #!/usr/bin/env php
-<?php 
-/**
- * Originally based on: https://github.com/doubledrones/kmmexport
+<?php
+/*
+ * Originally based on:
+ *     https://github.com/michaelfox/keyboard-maestro-macros/blob/master/kmmexport
+ * which was based on:
+ *     https://github.com/doubledrones/kmmexport
  */
+
+namespace CFPropertyList;
 
 define("VERBOSE", TRUE);
 define("HOME", getenv("HOME"));
 define("OUTPUTDIR", __DIR__ . "/macros");
 define("KM_MACRO_PLIST", HOME . "/Library/Application Support/Keyboard Maestro/Keyboard Maestro Macros.plist");
 
-require_once 'lib/CFPropertyList/CFPropertyList.php';
+require_once 'vendor/autoload.php';
 
 if (!is_dir(OUTPUTDIR)) {
 	mkdir(OUTPUTDIR);
@@ -31,15 +36,12 @@ foreach ($macro_groups as $macro_group) {
 	export_macros($macro_group);
 }
 
-
 function backup_master_plist() {
 	if(copy(KM_MACRO_PLIST, OUTPUTDIR . "/Keyboard Maestro Macros.plist")) {
 		$path = escapeshellarg(OUTPUTDIR . "/Keyboard Maestro Macros.plist");
 		exec("plutil -convert xml1 {$path}", $output);
 	}
 }
-
-
 
 function create_macro_group_folder($macro_group) {
 	$name = $macro_group->Name->getValue();
@@ -50,7 +52,6 @@ function create_macro_group_folder($macro_group) {
 		mkdir(OUTPUTDIR . "/groups/{$name}");
 	}
 }
-
 
 function create_kmmacros_file($macro_group, $macro=NULL) {
 	$group_name = get_kmmacro_name($macro_group);
@@ -64,7 +65,7 @@ function create_kmmacros_file($macro_group, $macro=NULL) {
 	}
 
 	$macro_group_plist = new CFPropertyList();
-	
+
 	// the Root element of the PList is an Array
 	$macro_group_plist->add( $array = new CFArray() );
 	$array->add( $macro_group );
@@ -72,7 +73,6 @@ function create_kmmacros_file($macro_group, $macro=NULL) {
 	$xml = $macro_group_plist->toXML(TRUE);
 	file_put_contents($file, $xml);
 }
-
 
 function export_macros($macro_group) {
 	$macros = $macro_group->Macros;
@@ -86,7 +86,6 @@ function export_macros($macro_group) {
 	}
 }
 
-
 function get_kmmacro_name($macro_group) {
 	$name = '';
 	if ($macro_group && is_object($macro_group)) {
@@ -99,7 +98,6 @@ function get_kmmacro_name($macro_group) {
 	}
 	return $name;
 }
-
 
 function msg($message) {
 	if (VERBOSE) {
