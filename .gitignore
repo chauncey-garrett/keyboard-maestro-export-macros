@@ -1,1 +1,3 @@
 macros/*
+vendor/*
+composer.phar
