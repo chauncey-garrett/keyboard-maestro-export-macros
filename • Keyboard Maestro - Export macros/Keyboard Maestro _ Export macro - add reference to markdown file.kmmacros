@@ -45,7 +45,7 @@
           <key>UID</key>
           <string>E29DB513-BA45-4802-B7B7-63BB05A98829</string>
           <key>ModificationDate</key>
-          <real>446435808.0487</real>
+          <real>446440426.80413</real>
           <key>Name</key>
           <string>Keyboard Maestro _ Export macro - add reference to markdown file</string>
           <key>Triggers</key>
@@ -76,7 +76,7 @@
               <key>RedundandDisplayName</key>
               <string>Default Clipboard</string>
               <key>Text</key>
-              <string>### [%macroName%](/%Variable%MACRO_GROUP_NAME%/%Variable%MACRO_NAME%.kmmacros)
+              <string>### [%Variable%MACRO_NAME%](/%Variable%MACRO_GROUP_NAME%/%Variable%MACRO_NAME%.kmmacros)
 
 ![](/img/%Variable%MACRO_NAME%.png)
 

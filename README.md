@@ -40,11 +40,17 @@ Export the macros:
 ## Exporting macros with images and a generated Markdown file
 
 - Add the [macro group](/• Keyboard Maestro - Export macros.kmmacros) to Keyboard Maestro.
-- Set the variables in [• Keyboard Maestro _ Export macro - set variables](/• Keyboard Maestro - Export macros/• Keyboard Maestro _ Export macro - set variables) to your liking.
+- Set the variables in [• Keyboard Maestro _ Export macro - set variables](/• Keyboard Maestro - Export macros/Keyboard Maestro _ Export macro - set variables) to your liking.
 - **Change the repeat action *n* times in [Keyboard Maestro | Export macro group with image](/• Keyboard Maestro - Export macros/Keyboard Maestro | Export macro group with image) to the number of macros in the group you wish to export.**
 - Execute [Keyboard Maestro | Export macro group with image](/• Keyboard Maestro - Export macros/Keyboard Maestro | Export macro group with image).
 - Cleanup the markdown file to your liking. In particular, ensure no newlines (\n) were added at the end of the filenames. If you find this happens often, you may need to increase the pauses within the macros, as the previous steps are dependent on processing power.
 - Share!
+
+What you get:
+
+- A markdown file of the macros, with images. See [• Keyboard Maestro _ Export macro](/• Keyboard Maestro - Export macros.md).
+- The entire group in one `kmmacros` file.
+- Each individual `kmmacros` file.
 
 ## Like it?
 
