@@ -39,7 +39,7 @@ Export the macros:
 
 ## Exporting macros with images and a generated Markdown file
 
-- Add the [macro group](/• Keyboard Maestro - Export macros/• Keyboard Maestro - Export macros.kmmacros) to Keyboard Maestro.
+- Add the [macro group](/• Keyboard Maestro - Export macros.kmmacros) to Keyboard Maestro.
 - Set the variables in [• Keyboard Maestro _ Export macro - set variables](/• Keyboard Maestro - Export macros/• Keyboard Maestro _ Export macro - set variables) to your liking.
 - **Change the repeat action *n* times in [Keyboard Maestro | Export macro group with image](/• Keyboard Maestro - Export macros/Keyboard Maestro | Export macro group with image) to the number of macros in the group you wish to export.**
 - Execute [Keyboard Maestro | Export macro group with image](/• Keyboard Maestro - Export macros/Keyboard Maestro | Export macro group with image).
